@@ -1,0 +1,17 @@
+.page-header {
+  display: flex;
+  margin: 0 auto;
+  color: tomato;
+  font-size: 60px;
+  background-color: yellowgreen;
+  max-width: 960px;
+  text-align: center;
+}
+.main-nav {
+  background-color: cyan;
+  text-align: center;
+}
+.main-nav__list {
+  list-style: none;
+  font-size: 48px;
+}

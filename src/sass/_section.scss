@@ -1,0 +1,18 @@
+.section {
+  display: flex;
+  width: 1200px;
+  align-items: center;
+  background-color: cyan;
+  &__title {
+    font-size: 70px;
+    color: darkblue;
+  }
+  &__list {
+    list-style: none;
+    align-content: center;
+  }
+  &__list-item {
+    color: darkgreen;
+    font-size: 48px;
+  }
+}
