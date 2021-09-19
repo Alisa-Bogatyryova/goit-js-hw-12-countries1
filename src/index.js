@@ -1,9 +1,9 @@
 import './styles.css';
+import '@pnotify/core/dist/BrightTheme.css'
 import fetchCountries from './fetchCountries.js';
-import countryListItemsTemplate from './tamplate/countryListItem.hbs';
-import countriesListTemplate from './tamplate/countrieList.hbs';
-import PNotify from 'pnotify/dist/es/PNotify.js';
-import PNotifyStyleMaterial from 'pnotify/dist/es/PNotifyStyleMaterial.js';
+import countryListItemsTemplate from './template/countryListItem.hbs';
+import countriesListTemplate from './template/countryList.hbs';
+import PNotify from './node_modules/@pnotify';
 import debounce from 'lodash.debounce';
 
 const refs = {

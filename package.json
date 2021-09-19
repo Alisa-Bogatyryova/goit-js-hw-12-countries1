@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
+    "node": "^16.9.1",
     "pnotify": "^5.2.0"
   }
 }
