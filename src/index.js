@@ -4,7 +4,7 @@ import fetchCountries from './fetchCountries.js';
 import countryListItemsTemplate from './template/countryListItem.hbs';
 import countriesListTemplate from './template/countryList.hbs';
 import PNotify from './node_modules/@pnotify';
-import debounce from 'lodash.debounce';
+import debounce from './node_modules/lodash.debounce';
 
 const refs = {
   searchForm: document.querySelector('#search-form'),
