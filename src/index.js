@@ -35,14 +35,14 @@ function searchFormInputHandler(e) {
     } else if (data.length < 10) {
       error({
         title: 'Oh No!',
-        text: 'Too many matches found.Please enter a more specific query',
+        text: 'Too many matches found. Please enter a more specific query',
       });
     } else if (data.length >= 2 && data.length <= 10) {
       insertListItem(renderCountriesList);
     } else if (data.length === 1) {
       insertListItem(markup);
     } else {
-      alert('Ничего не найдено.Корректно введите запрос');
+      alert('Ничего не найдено. Корректно введите запрос');
     }
   });
 }
