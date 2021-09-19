@@ -2,8 +2,8 @@ import './styles.css';
 import fetchCountries from './fetchCountries.js';
 import countryListItemsTemplate from './template/countryListItem.hbs';
 import countriesListTemplate from './template/countryList.hbs';
-import { alert, notice, info, success, error } from '@pnotify/core';
-import debounce from './node_modules/lodash.debounce';
+import { alert, notice, info, success, error } from '../node_modules/@pnotify/core';
+import debounce from '../node_modules/lodash.debounce';
 
 const refs = {
   searchForm: document.querySelector('#search-form'),
