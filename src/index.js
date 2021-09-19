@@ -1,9 +1,8 @@
 import './styles.css';
-import '@pnotify/core/dist/BrightTheme.css'
 import fetchCountries from './fetchCountries.js';
 import countryListItemsTemplate from './template/countryListItem.hbs';
 import countriesListTemplate from './template/countryList.hbs';
-import PNotify from './node_modules/@pnotify';
+import { alert, notice, info, success, error } from '@pnotify/core';
 import debounce from './node_modules/lodash.debounce';
 
 const refs = {
@@ -34,8 +33,7 @@ function searchFormInputHandler(e) {
     if (!data) {
       return;
     } else if (data.length > 10) {
-      PNotify.defaults.styling = 'material';
-      PNotify.error({
+      error({
         title: 'Oh No!',
         text: 'Too many matches found.Please enter a more specific query',
       });
