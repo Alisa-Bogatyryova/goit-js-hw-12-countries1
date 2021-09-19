@@ -32,7 +32,7 @@ function searchFormInputHandler(e) {
     const renderCountriesList = buildCountriesList(data);
     if (!data) {
       return;
-    } else if (data.length > 10) {
+    } else if (data.length < 2) {
       error({
         title: 'Oh No!',
         text: 'Too many matches found.Please enter a more specific query',
